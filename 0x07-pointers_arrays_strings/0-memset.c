@@ -9,11 +9,21 @@
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-	int i = 0;
-	 for (; n > 0; i++)
-	{
-	 s[i] = b;
-	 n--;
-	}
-	return (s);
-}		
+        unsigned int i;
+
+        i = 0;
+        while (i < size)
+        {
+                if (i % 10)
+                {
+                        printf(" ");
+                }
+                if (!(i % 10) && i)
+                {
+                        printf("\n");
+                }
+                printf("0x%02x", buffer[i]);
+                i++;
+        }
+        printf("\n");
+}						
