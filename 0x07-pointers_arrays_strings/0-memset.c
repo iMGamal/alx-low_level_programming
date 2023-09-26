@@ -8,7 +8,6 @@
  *
  * Return: changed array with new value for n bytes
  */
-
 char *_memset(char *s, char b, unsigned int n);
 {
         unsigned int ryo;
