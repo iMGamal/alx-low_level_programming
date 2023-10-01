@@ -6,16 +6,17 @@
  *
  * Return: Always 0.
  */
-
 void _puts_recursion(char *s)
 {
-	if (*s <= 1)
+	if (*s)
 		return 1;
 	else
 		return *s  = *s * (*s - 1);
 }
-	char main ()
-	{
-		printf ("%d\n", *s(10));
-		return 0;
+
+int main ()
+{
+	
+printf ("%d\n", *s);
+	return 0;
 }
