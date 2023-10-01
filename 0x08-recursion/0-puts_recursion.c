@@ -9,13 +9,13 @@
 
 void _puts_recursion(char *s)
 {
-	if (puts => 1)
+	if (*s <= 1)
 		return 1;
 	else
-		return puts = puts * (puts - 1);
-
+		return *s  = *s * (*s - 1);
+}
 	char main ()
-{
-	printf ("%d\n", puts(10));
-	return 0;
+	{
+		printf ("%d\n", *s(10));
+		return 0;
 }
