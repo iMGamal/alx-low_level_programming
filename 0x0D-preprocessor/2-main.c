@@ -1,8 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-#define _FILE_
-
 /**
  * define - file
  *
