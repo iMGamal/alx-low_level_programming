@@ -1,8 +1,6 @@
-#include<stdio.h>
-
 #ifndef FUNCTION_LIKE_MACRO_H
 #define FUNCTION_LIKE_MACRO_H
 
-#define ABS(x) ((x < 5))
+#define ABS(x) ((x) < (5))
 
 #endif
