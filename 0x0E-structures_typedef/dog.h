@@ -2,7 +2,7 @@
 #define DOG_H
 
 /**
- * struct dog - define new type struct dog
+ * struct dog - new struct dog
  * @name, type = char *
  * @age, type = float
  * @owner, type = char*
