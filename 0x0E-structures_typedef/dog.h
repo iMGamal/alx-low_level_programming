@@ -2,7 +2,7 @@
 #define DOG_H
 
 /**
- * struct dog - good dog
+ * struct dog - good struct dog
  * @name, type = char *
  * @age, type = float
  * @owner, type = char *
