@@ -2,11 +2,10 @@
 #define _DOG_H
 
 /**
- * main - define new type struct dog
+ * struct dog - define new type struct dog
  * name, type = char *
  * age, type = float
  * owner, type = char *
- * Description: good struct dog
  * Return: Always (0).
  */
 
