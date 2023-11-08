@@ -6,6 +6,7 @@
  * @name, type = char *
  * @age, type = float
  * @owner, type = char*
+ *
  * Description: struct dog
  */
 struct dog
