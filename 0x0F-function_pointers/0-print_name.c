@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<stdlib.h>
+#include"main.c"
 
 /**
  * main - write a function that prints a name
@@ -9,7 +9,7 @@
  * Return: Always(0).
  */
 
-void print_name(char *name, void (*f)(char *));
+void print_name(char *name, void (*f)(char *))
 {
-	printf("name\n", *f)
+	printf("name\n", *f);
 }
