@@ -1,19 +1,23 @@
-#include <main.h>
-#include <stdio.h>
+#include<stdio.h>
+#include<main.h>
+
 /**
- * puts_recursion - print a string followed by a new line.
- * Return: Always 0 (Success)
+ * _puts_recursion - print a string
+ * s - variable to be initialized
+ * Return: Always (0).
  */
+
 void _puts_recursion(char *s);
+
 {
-	if (*s == '\0')
+	if (*s)
 	{
-		puts('\n');
+		_puts(*s);
+		_puts_recursion(s + 1);
 	}
 	else
 	{
-		puts(*s);
-		_puts_recursion(s + 1);
+		_puts(\n);
 	}
-	return 0;
+	return (0);
 }
