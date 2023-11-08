@@ -6,10 +6,9 @@
  * name, type = char *
  * age, type = float
  * owner, type = char *
- * Description: good struct dog 
+ * Description: good struct dog
  * Return: Always (0).
  */
-
 
 struct dog
 {
