@@ -1,14 +1,16 @@
-#ifndef DOG_H
-#define DOG_H
+#ifndef _DOG_H_
+#define _DOG_H_
 
 /**
  * struct dog - a struct dog
+ *
  * @name, type = char *
  * @age, type = float
  * @owner, type = char *
  *
- * Description: just a long dog struct in a kitty world
+ * Description: just a long dog struct
  */
+
 struct dog
 {
 	char *name;
