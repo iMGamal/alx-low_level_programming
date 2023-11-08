@@ -6,10 +6,12 @@
  * name, type = char *
  * age, type = float
  * owner, type = char *
+ * Description: good dog
  * Return: Always (0).
  */
 
-struct dog {
+struct dog
+{
 	char *name;
 	float age;
 	char *owner;
