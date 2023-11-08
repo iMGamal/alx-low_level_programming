@@ -9,6 +9,8 @@
  * Return: Always (0).
  */
 
+#endif
+
 struct dog
 {
 	char *name;
@@ -16,4 +18,12 @@ struct dog
 	char *owner;
 };
 
-#endif
+int main(void)
+{
+	struct dog my_dog;
+	my_dog.name ="Zack";
+	my_dog.age ="3";
+	my_dog.owner ="Mace";
+
+	return (0);
+}
