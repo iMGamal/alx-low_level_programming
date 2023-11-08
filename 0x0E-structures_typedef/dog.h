@@ -6,7 +6,7 @@
  * name, type = char *
  * age, type = float
  * owner, type = char *
- * description - good dog
+ * Description : good dog 
  * Return: Always (0).
  */
 
