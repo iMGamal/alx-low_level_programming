@@ -5,8 +5,7 @@
  * struct dog - define new type struct dog
  * name, type = char *
  * age, type = float
- * owner, type = char* 
- *
+ * owner, type = char*
  * Description: struct dog
  */
 struct dog
