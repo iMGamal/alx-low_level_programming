@@ -2,12 +2,12 @@
 #define DOG_H
 
 /**
- * struct dog - good struct dog
+ * struct dog - a struct dog
  * @name, type = char *
  * @age, type = float
  * @owner, type = char *
  *
- * Description: struct dog with a big heart
+ * Description: just a long dog struct in a kitty world
  */
 struct dog
 {
