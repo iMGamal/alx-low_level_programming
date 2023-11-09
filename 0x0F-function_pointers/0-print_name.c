@@ -1,15 +1,15 @@
 #include<stdio.h>
-#include"main.c"
+#include"function_pointers.h"
 
 /**
  * main - write a function that prints a name
  * @name: printf
- * @(*f): pointer to a finction
- * *
- * Return: Always(0).
+ * @(*f): pointer to a function
+ * Return: nothing.
  */
 
 void print_name(char *name, void (*f)(char *))
 {
-	printf("name\n", *f);
+	if (&name, &f);
+		f(name);
 }
