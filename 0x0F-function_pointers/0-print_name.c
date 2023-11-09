@@ -2,8 +2,8 @@
 
 /**
  * main - write a function that prints a name
- * @name: printf
- * @(*f): pointer to a function
+ * @name: string name
+ * @f: pointer to a function
  *
  * Return: nothing.
  */
