@@ -1,15 +1,18 @@
 #include<stdio.h>
+
 /**
-* main - Entry point
-*
-* Return: Always 0 (Success)
-*/
-int main(void)
+ * sizeof - a program that prints size of types
+ * @char: data type with 1 byte size
+ * @short: data type with 2 bytes size
+ * @float: data type with 4 bytes size
+ * @double: data type with 8 bytes size
+ * Return: (0)
+ */
+int sizeof(void,char,short,float,double)
 {
-	printf("Size of a char: %d byte(s)\n", sizeof(char));
-	printf("Size of an int: %d byte(s)\n", sizeof(int));
-	printf("Size of a long int: %d byte(s)\n", sizeof(long int));
-	printf("Size of a long long int: %d byte(s)\n", sizeof(long long int));
-	printf("Size of a float: %d byte(s)\n", sizeof(float));
+	printf("print size of char,%c\n",sizeof(char));
+	printf("print size of short,%hd\n",sizeof(short));
+	printf("print size of float,%f\n",sizeof(float));
+	printf("print size of double,%lf\n",sizeof(double));
 	return (0);
 }
