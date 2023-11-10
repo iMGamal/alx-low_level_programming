@@ -3,12 +3,18 @@
 
 /**
  * _puts_recursion - prints a string
- * @char * - data type
- * @s - variable to be printed
+ * @char - data type
+ * @*s - variable to be printed
  */
 void _puts_recursion(char *s)
 {
-	_puts_recursion(char *s) == s;
-
-	_putchar("%c char *s\n", *s)
+	if(*s == '\0')
+	{
+		_putchar("*s\n");
+	}
+	else
+	{
+		_putchar(*s);
+		_puts_recursion(s+1);
+	}
 }
