@@ -7,8 +7,9 @@
 int main(void)
 {
 	printf("print size of char,%c\n", sizeof(char));
-	printf("print size of short,%hd\n", sizeof(short));
+	printf("print size of int,%d\n", sizeof(int));
+	printf("print size of long int,%ld\n", sizeof(long int));
+	printf("print size of long long,%lld\n", sizeof(long long));
 	printf("print size of float,%f\n", sizeof(float));
-	printf("print size of double,%lf\n", sizeof(double));
 	return (0);
 }
