@@ -16,11 +16,11 @@ int main(void)
 		{
 			printf("value of n,%d\n", n);
 		}
-		else if(n = 0)
+		if(n = 0)
 		{
 			printf("value of n,%d\n", n);
 		}
-		else(n < 0);
+		if(n < 0);
 		{
 			printf("value of n,%d\n", n);
 		}
