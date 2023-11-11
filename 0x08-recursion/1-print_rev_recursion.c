@@ -3,18 +3,10 @@
 
 /**
  * _print_rev_recursion - printing in reverse
- * @s - input
- * Return: Always 0 (success)
+ * @s : string
  */
 void _print_rev_recursion(char *s)
 {
-	if (*s == '\0')
-	{
-		printf("*s");
-	}
-	else
-	{
 		_print_rev_recursion(s + 1);
 		printf("*s");
-	}
 }
