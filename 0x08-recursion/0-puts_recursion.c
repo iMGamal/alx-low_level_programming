@@ -1,20 +1,15 @@
-#include<stdio.h>
-#include"main.h"
-
+#include "main.h"
+#include "_putchar.c"
 /**
- * _puts_recursion - prints a string
- *
- * @s - pointer to string
- */
+ * _puts_recursion - function like puts();
+ * @s: input
+ * Return: Always 0 (Success)
+ **/
 void _puts_recursion(char *s)
 {
 	if (*s != '\0')
-	{
-	puts("*s");
-	_puts_recursion(s +1);
+	{						_putchar(*s);
+	_puts_recursion(s + 1);
 	}
-	if (*s == '\0')
-	{
-		puts("\n");
-	}
+	else						_putchar('\n');
 }
