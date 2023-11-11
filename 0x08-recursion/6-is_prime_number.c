@@ -7,16 +7,20 @@
  */
 int is_prime_number(int n)
 {
+	int i = n;
+	i++;
+
 	if (n < 0)
 	{
 		return (0);
 	}
-	else if (%n == 0)
+	else if (n % i == 0)
 	{
 		return (0);
 	}
 	else
 	{
-		return (n * is_prime_number( n - 1));
+		return (n * is_prime_number(n - 1));
 	}
+
 }
