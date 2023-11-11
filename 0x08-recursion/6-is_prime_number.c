@@ -8,6 +8,7 @@
 int is_prime_number(int n)
 {
 	int i = n;
+
 	i++;
 
 	if (n < 0)
