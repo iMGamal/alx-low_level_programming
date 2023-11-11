@@ -4,9 +4,13 @@
 /**
  * _print_rev_recursion - printing in reverse
  * @s : string
+ * Return : Always 0 (success)
  */
 void _print_rev_recursion(char *s)
 {
+	if(*s)
+	{
 		_print_rev_recursion(s + 1);
 		printf("*s");
+	}
 }
