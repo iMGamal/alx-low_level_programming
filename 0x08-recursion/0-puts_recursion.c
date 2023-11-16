@@ -9,14 +9,19 @@
  */
 void _puts_recursion(char *s)
 {
-	if (*s == '\0')
+	if (s == 0)
 	{
-		printf("character string %s", s);
+		printf("%s\n", s);
 		return;
 	}
-	else
+	else if (s > 0)
 	{
-		printf("character string %s\n",s);
+		printf("%s", s);
+		return;
+	}
+	else;
+	{
+		printf("%s\n",s - 1);
 		return;
 	}
 	return;
