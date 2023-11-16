@@ -11,17 +11,17 @@ void _puts_recursion(char *s)
 {
 	if (s == 0)
 	{
-		printf("%s \n", s);
+		puts(s);
 		return;
 	}
 	else if (s != 0)
 	{
-		printf("%s ", s);
+		puts(s);
 		return;
 	}
 	else
 	{
-		printf("%s \n", s + 1);
+		puts(s + 1);
 		return;
 	}
 		return;
