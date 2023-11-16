@@ -14,15 +14,15 @@ void _puts_recursion(char *s)
 		printf("%s\n", s);
 		return;
 	}
-	else if (s > 0)
+	else if (s != 0)
 	{
 		printf("%s", s);
 		return;
 	}
-	else;
+	else
 	{
 		printf("%s\n",s - 1);
 		return;
 	}
-	return;
+		return;
 }
