@@ -16,5 +16,15 @@ int _strlen_recursion(char *s)
 		printf("%d\n", _strlen_recursion(s + 1));
 		return (0);
 	}
+	else if (s != 0)
+	{
+		printf("%d\n", n);
+		return (0);
+	}
+	else
+	{
+		puts(s);
+		return (0);
+	}
 		return (n);
 }
