@@ -5,18 +5,15 @@
  * _strlen_recursion - prints legnth of string
  * @char * : data type
  * @s : string
- * Return : 0
+ * Return : legnth of string
  */
 int _strlen_recursion(char *s)
 {
-	int n;
+	int n = 0;
 
-	n = 1;
-	s = 0;
-
-	if (*s == '\0')
+	if (*s)
 	{
-		printf("%d\n", n);
+		printf("%d\n", _strlen_recursion(s + 1));
 		return (0);
 	}
 		return (0);
