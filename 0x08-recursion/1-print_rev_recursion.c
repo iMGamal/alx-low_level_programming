@@ -14,6 +14,10 @@ void _print_rev_recursion(char *s)
 		puts(s + 1);
 		return;
 	}
+	else if (s != 0)
+	{
+		puts(s);
+		return;
 	else
 	{
 		puts(s);
