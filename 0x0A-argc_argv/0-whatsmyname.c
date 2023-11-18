@@ -6,6 +6,6 @@
  */
 int main()
 {
-	printf("main");
+	printf("main\n");
 	return (0);
 }
