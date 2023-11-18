@@ -2,10 +2,11 @@
 
 /**
  * main - entry point
+ * @argv : argument 
  * Return : 0
  */
-int main()
+int main(argv)
 {
-	printf("main\n");
+	printf("%s\n", argv);
 	return (0);
 }
