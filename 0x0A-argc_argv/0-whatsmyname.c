@@ -5,8 +5,8 @@
  * @argv : argument 
  * Return : 0
  */
-int main(argv)
+int argv()
 {
-	printf("%s\n", argv);
+	printf("argv\n");
 	return (0);
 }
