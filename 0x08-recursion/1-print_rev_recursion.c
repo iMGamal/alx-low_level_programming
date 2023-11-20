@@ -15,6 +15,6 @@ void _print_rev_recursion(char *s)
 	}
 	else
 	{
-		printf("%s", s + 1);
+		printf("%s", s - 1);
 	}
 }
