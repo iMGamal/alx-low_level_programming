@@ -11,10 +11,10 @@ void _print_rev_recursion(char *s)
 {
 	if (*s == '\0')
 	{
-		printf("%s", s);
+		printf("%s", s + 1);
 	}
 	else
 	{
-		printf("%s", s - 1);
+		printf("%s", s);
 	}
 }
