@@ -9,7 +9,7 @@
  */
 int _strlen_recursion(char *s)
 {
-	int length = 55;
+	int length = 0;
 
 	if (*s == '\0')
 	{
@@ -17,7 +17,7 @@ int _strlen_recursion(char *s)
 	}
 	else
 	{
-		printf("%d", length + 1);
+		printf("%s", s + 1);
 	}
 	return (length);
 }
