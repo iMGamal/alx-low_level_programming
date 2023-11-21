@@ -5,22 +5,20 @@
  * _strlen_recursion - length of string
  * @char * : data type
  * @s : character string
- * Return : strlen
+ * Return : length
  */
 int _strlen_recursion(char *s)
 {
-	int strlen;
-
-	strlen = *s;
+	int length = 0;
 
 	if (*s == '\0')
 	{
-		printf("%d", strlen);
-		_strlen_recursion(s + 1);
+		printf("%s", s);
 	}
 	else
 	{
-		printf("%s", s);
+		printf("%d", length);
+		_strlen_recursion(s + 1);
 	}
-	return (strlen);
+	return (length);
 }
