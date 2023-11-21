@@ -14,13 +14,10 @@ int _strlen_recursion(char *s)
 	if (*s == '\0')
 	{
 		printf("%d", strlen);
-		return (0);
 	}
 	else
 	{
-		_strlen_recursion(s + 1);
 		putchar(*s);
-		return (0);
 	}
 	return (0);
 }
