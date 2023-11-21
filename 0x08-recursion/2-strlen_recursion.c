@@ -2,19 +2,19 @@
 #include "main.h"
 
 /**
- * _strlen_recursion - prints legnth of string
+ * _strlen_recursion - length of string
  * @char * : data type
- * @s : string
- * Return : legnth of string
+ * @s : character string
+ * Return : integer value of string length
  */
 int _strlen_recursion(char *s)
 {
-	int n = 0;
+	int strlen = 0;
 
-	if (*s)
+	if(*s == '\0')
 	{
-		n++;
-		_strlen_recursion(s + 1);
+		printf("%d", strlen);
+		return (0);
 	}
-		return (n);
+	return (0);
 }
