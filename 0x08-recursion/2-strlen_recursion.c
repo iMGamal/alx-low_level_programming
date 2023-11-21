@@ -5,7 +5,7 @@
  * _strlen_recursion - length of string
  * @char * : data type
  * @s : character string
- * Return : 
+ * Return : value of integer
  */
 int _strlen_recursion(char *s)
 {
@@ -13,7 +13,7 @@ int _strlen_recursion(char *s)
 
 	if (*s > '\0')
 	{
-		length ++;
+		length++;
 		length += _strlen_recursion(s + 1);
 	}
 	return (length);
