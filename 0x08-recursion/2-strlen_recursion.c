@@ -5,7 +5,7 @@
  * _strlen_recursion - length of string
  * @char * : data type
  * @s : character string
- * Return : 0
+ * Return : strlen
  */
 int _strlen_recursion(char *s)
 {
@@ -20,5 +20,5 @@ int _strlen_recursion(char *s)
 		putchar(*s);
 		_strlen_recursion(s + 1);
 	}
-	return (0);
+	return (strlen);
 }
