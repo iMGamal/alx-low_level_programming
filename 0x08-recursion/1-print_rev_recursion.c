@@ -9,6 +9,8 @@
  */
 void _print_rev_recursion(char *s)
 {
+	char reverse = *s + 1;
+
 	if (*s == '\0')
 	{
 		printf("%s", s);
