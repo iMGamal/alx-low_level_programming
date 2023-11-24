@@ -18,11 +18,10 @@ void *malloc_checked(unsigned int b)
 	}
 	else if (n == 0)
 	{
-		return (NULL);
+		exit(98);
 	}
 	else
 	{
 		return (0);
 	}
-	return (0);
 }
