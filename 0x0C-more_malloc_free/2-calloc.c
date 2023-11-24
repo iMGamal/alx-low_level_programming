@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "main.h"
 
 /**
@@ -16,11 +17,13 @@ void * _calloc(unsigned int nmemb, unsigned int size)
 	{
 		return (NULL);
 	}
-	a = malloc(nmemb * sizeof(int));
+	a = malloc(sizeof(int) * nmemb);
 
-	if (a == NULL)
+	if (a == 0)
 	{
 		return (NULL);
 	}
+	memset(a, 0, sizeof(int) * nmemb);
+
 	return (a);
 }
