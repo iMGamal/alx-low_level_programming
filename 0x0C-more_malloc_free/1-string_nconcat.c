@@ -25,10 +25,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		b = 0;
 	}
-	else if (n == 0)
+	else if (b > n)
 	{
-		return (NULL);
+		x = malloc(sizeof(char) * (a + b + 1));
 	}
-	x = malloc(sizeof(char) * (a + b + 1));
 	return (x);
 }
