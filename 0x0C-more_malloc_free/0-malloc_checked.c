@@ -5,7 +5,7 @@
 /**
  * mallo_checked - function returns nothing
  * @b : parameter whose soze to be checked
- * Return : void
+ * Return : pointer to allocated memory
  */
 void *malloc_checked(unsigned int b)
 {
