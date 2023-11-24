@@ -22,6 +22,6 @@ void *malloc_checked(unsigned int b)
 	}
 	else
 	{
-		return (0);
+		return (n);
 	}
 }
