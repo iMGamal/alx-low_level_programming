@@ -4,7 +4,7 @@
 /**
  * factorial - function
  * @n : parameter
- * Return : Always positive number (Success)
+ * Return : (n * factorial (n - 1))
  */
 int factorial(int n)
 {
