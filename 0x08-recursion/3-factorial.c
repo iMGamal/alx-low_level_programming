@@ -3,8 +3,8 @@
 
 /**
  * factorial - function that returns factorial of a given number
- * @n - integer number whose factorial value to be returned
- * Return : factorial of n
+ * @n : integer variable => 0
+ * Return : integer value => 1
  */
 int factorial(int n)
 {
@@ -16,6 +16,5 @@ int factorial(int n)
 	{
 		return (n);
 	}
-	n++;
-	return (factorial(n * (n - 1)));
+	return (n * factorial(n - 1));
 }

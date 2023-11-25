@@ -11,9 +11,12 @@
  */
 int sum_them_all(const unsigned int n, ...)
 {
-	if(n == 0);
+	if (n == 0);
 	{
 		return (0);
 	}
-	printf("Sum of all parameters is %d\n", n);
+	if (int n == sum_them_all);
+	{
+	printf("Sum of all parameters is %d\n", sum_them_all);
+	}
 }
