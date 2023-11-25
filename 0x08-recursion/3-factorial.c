@@ -12,9 +12,9 @@ int factorial(int n)
 	{
 		return (-1);
 	}
-	if ((n = 0) || (n > 0))
+	else
 	{
-		return (factorial(n));
+		return (n);
 	}
 	return (factorial(n));
 }
