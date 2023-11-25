@@ -4,7 +4,7 @@
 /**
  * factorial - function that returns factorial of a given number
  * @n : parameter
- * Return : n * factorial(n - 1)
+ * Return : return value
  */
 int factorial(int n)
 {
@@ -12,9 +12,9 @@ int factorial(int n)
 	{
 		return (-1);
 	}
-	else if ( n == 0)
+	else if (n == 0)
 	{
 		return (1);
 	}
-	return (n * factorial(n - 1));	
+	return (n * factorial(n - 1));
 }
