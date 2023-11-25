@@ -4,7 +4,7 @@
 /**
  * factorial - function
  * @n : parameter
- * Return : factorial
+ * Return : factorial of n
  */
 int factorial(int n)
 {
