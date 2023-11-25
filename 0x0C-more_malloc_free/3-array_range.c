@@ -10,19 +10,19 @@
  */
 int *array_range(int min, int max)
 {
-	int n[] = {1, 3};
+	int n;
 
-	int *a = malloc(sizeof(int *) * min * max);
+	int *ptr;
 
-	min = 1;
-	max = 3;
 	if (min > max)
 	{
 		return NULL;
 	}
-	if (n == 0)
+	n = max - min + 1;
+	ptr = malloc(sizeof(int) * n);
+	if (!ptr)
 	{
 		return NULL;
 	}
-	return (a);
+	return (ptr);
 }
