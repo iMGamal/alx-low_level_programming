@@ -3,18 +3,20 @@
 
 /**
  * factorial - function that returns factorial of a given number
- * @n : integer variable => 0
- * Return : integer value => 1
+ * @n : parameter
+ * Return : n * factorial(n - 1)
  */
 int factorial(int n)
 {
+	int given number = factorial(n);
+	
 	if (n < 0)
 	{
 		return (-1);
 	}
-	else
+	else if ( n == 0)
 	{
-		return (n * factorial(n -1));
+		return (1);
 	}
-	return (n * factorial(n - 1));
+	return (n * factorial(n - 1));	
 }
