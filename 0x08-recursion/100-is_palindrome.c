@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+#include <string.h>
 
 /**
  * is_palindrome - function
@@ -8,15 +9,17 @@
  */
 int is_palindrome(char *s)
 {
-	int palindrome = is_palindrome(s - 1);
+	int rev_palindrome = 0;
+
+	int palindrome = strlen(s) - 1;
 
 	if (*s < 0 || *s == 0)
 	{
 		return (0);
 	}
-	if (*s == palindrome)
+	if (s[rev_palindrome++] != s[palindrome--])
 	{
-		return (1);
+		return (0);
 	}
-	return (0);
+	return (1);
 }
