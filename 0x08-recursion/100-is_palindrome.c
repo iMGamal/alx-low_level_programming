@@ -12,9 +12,9 @@ int is_palindrome(char *s)
 	{
 		return (0);
 	}
-	else if (is_palindrome(*s + 1) == is_palindrome(*s))
+	else if (is_palindrome(s) == is_palindrome(s + 1))
 	{
 		return (1);
 	}
-	return (is_palindrome(*s + 1));
+	return (is_palindrome(s + 1));
 }
