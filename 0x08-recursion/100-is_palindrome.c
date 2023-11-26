@@ -21,5 +21,9 @@ int is_palindrome(char *s)
 	{
 		return (0);
 	}
+	else if (palindrome > rev_palindrome)
+	{
+		return (0);
+	}
 	return (1);
 }
