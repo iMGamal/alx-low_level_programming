@@ -17,7 +17,7 @@ int is_palindrome(char *s)
 	{
 		return (0);
 	}
-	if (s[rev_palindrome++] != s[palindrome--] || s[rev_palindrome++] > palindrome)
+	if (s[rev_palindrome++] != s[palindrome--] || s[rev_palindrome++] != palindrome)
 	{
 		return (0);
 	}
