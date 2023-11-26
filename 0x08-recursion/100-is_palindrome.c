@@ -8,13 +8,15 @@
  */
 int is_palindrome(char *s)
 {
+	int palindrome = is_palindrome(s - 1);
+
 	if (*s < 0 || *s == 0)
 	{
 		return (0);
 	}
-	else if (is_palindrome(s) == is_palindrome(s + 1))
+	if (*s == palindrome)
 	{
 		return (1);
 	}
-	return (is_palindrome(s + 1));
+	return (0);
 }
