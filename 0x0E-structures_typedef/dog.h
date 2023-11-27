@@ -1,21 +1,12 @@
-#ifndef _DOG_H_
-#define _DOG_H_
+#include <stdio.h>
 
 /**
- * struct dog - a struct dog
- *
- * @name, type = char *
- * @age, type = float
- * @owner, type = char *
- *
- * Description: just a long dog struct
+ * struct - structure declaration
+ * dog - structure tag
  */
-
 struct dog
 {
 	char *name;
 	float age;
 	char *owner;
 };
-
-#endif
