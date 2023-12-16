@@ -2,7 +2,14 @@
 #include "stdlib.h"
 #include "stdarg.h"
 
-int main(int argc, char **argv)
+/**
+ * main - program that prints its name
+ * @argc : number of arguments
+ * @argv[] : array of pointers to strings
+ */
+int main(int argc, char *argv[])
 {
-	printf("%s", *argv);
+	printf("%s", argv[0]);
+	(void)argc;
+	return (0);
 }
