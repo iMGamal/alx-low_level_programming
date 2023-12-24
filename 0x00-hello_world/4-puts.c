@@ -1,11 +1,11 @@
-#include<stdio.h>
-
+#include "stdio.h"
 /**
- * main - write a program that prints
- * Return: (0)
+ * main : function that prints
+ * return : always 0
  */
-int main(void)
+
+int main()
 {
 	puts("\"Programming is like building a multilingual puzzle");
-	return (0);
+	return(0);
 }
