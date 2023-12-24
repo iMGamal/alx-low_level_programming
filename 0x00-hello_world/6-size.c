@@ -8,11 +8,11 @@
  */
 int main(void)
 {
-	printf("sizeof(char)\n
-		sizeof(int)\n
-		sizeof(long int)\n
-		sizeof(long long)\n
-		sizeof(float)");
+	printf("sizeof(char)\n");
+	printf("sizeof(int)\n");
+	printf("sizeof(long int)\n");
+	printf("sizeof(long long)\n");
+	printf("sizeof(float)\n");
 	return (0);
 }
 
