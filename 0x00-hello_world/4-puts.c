@@ -1,7 +1,10 @@
 #include "stdio.h"
 /**
- * main - function
- * @return - Always 0 (Success)
+ * main - Entry point
+ *
+ * Description: a C program that prints
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
