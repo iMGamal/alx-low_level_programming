@@ -1,9 +1,8 @@
 #include "stdio.h"
 /**
  * main : function that prints
- * return : always 0
+ * Return : Always 0 (Success)
  */
-
 int main()
 {
 	puts("\"Programming is like building a multilingual puzzle");
