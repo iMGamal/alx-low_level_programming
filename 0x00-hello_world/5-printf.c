@@ -1,8 +1,10 @@
-#include<stdio.h>
-
+#include "stdio.h"
 /**
- * main - write a program that prints
- * Return: (0)
+ * main - Entry point
+ *
+ * Description: a C program that prints
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
