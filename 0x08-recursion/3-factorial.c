@@ -13,4 +13,5 @@ int factorial(int n)
 		putchar(n + 1);
 		return (0);
 	}
+	return (n);
 }
