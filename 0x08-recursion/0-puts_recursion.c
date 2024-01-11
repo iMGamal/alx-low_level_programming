@@ -2,9 +2,8 @@
 
 /**
  * _puts_recursion - Entry Point
- *
  * Description - function that prints a string followed by a new line
- * @char : parameter that returns a character
+ * @s : character string
  * Return : Always 0 (Success)
  */
 void _puts_recursion(char *s)
