@@ -4,7 +4,7 @@
  * _strlen_recursion - Entry points
  * Description - function that returns length of string
  * @s : character string
- * Return : Always 0 (Success)
+ * Return : length of string
  */
 int _strlen_recursion(char *s)
 {
