@@ -3,14 +3,14 @@
  * main - Entry point
  * argc - number of arguments supplied to main
  * argv[] - array of pointers to strings
- * Return - Always 0 (Success)
  */
-int main(int argc, char *argv[])
+void main(int argc, char *argv[])
 {
-	if (argc > 0 && argv[argc] == NULL)
+	int i;
+
+	if (i < argc && argv[argc] == NULL)
 	{
-		printf("%d\n",argc);
-		return (0);
+		printf("%s\n", argv[i]);
+		i++;
 	}
-	return (0);
 }
