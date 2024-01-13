@@ -1,10 +1,9 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * Description: a program that print its name
- * @argc: number of arguments supplied to main
- * @argv[]: array of pointers to strings
- * Return: Always 0 (Success)
+ * argc - number of arguments supplied to main
+ * argv[] - array of pointers to strings
+ * Return - Always 0 (Success)
  */
 int main(int argc, char *argv[])
 {
