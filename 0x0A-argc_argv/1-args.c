@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 
 	if (argc > i && argv[argc] == NULL)
 	{
-		printf("%d\n", argc);
+		printf("%s\n", argv[argc - 1]);
 		i++;
 		return (0);
 	}
