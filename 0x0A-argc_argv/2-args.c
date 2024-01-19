@@ -5,13 +5,9 @@
  * argv - array of pointers to strings
  * Return - Always 0 (Success)
  */
-int main(int argc, char *argv[])
+int main(__attribute__((unused))int argc, char *argv[])
 {
-	if (argc > 0 && argv[argc] == NULL)
-	{
-		printf("%s\n", argv[argc - 1]);
-		argv++;
-		return (0);
-	}
+	printf("%s\n", argv[0]);
+	argv[0]++;
 	return (0);
 }
