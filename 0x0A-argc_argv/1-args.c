@@ -1,7 +1,7 @@
 #include<stdio.h>
 /**
  * main - Entry point
- * argc - number of arguments
+ * argc - number of passed arguments
  * argv[] - array of pointers to strings
  * Return: Always 0 (Success)
  */
