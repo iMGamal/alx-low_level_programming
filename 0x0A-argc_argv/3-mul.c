@@ -10,13 +10,15 @@ int main(int argc, char *argv[])
 {
 	int i = 1;
 
+	argv[i] = x;
+
 	int outcome = 1;
 
 	if (argc > i && argv[argc] == NULL)
 	{
-		outcome == outcome * argv[i];
+		outcome == outcome * x;
 		printf("%d\n", outcome);
-		i++
+		i++;
 		return (0);
 	}
 	return (0);
