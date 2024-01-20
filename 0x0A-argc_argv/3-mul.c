@@ -10,8 +10,8 @@ int main(int argc, char *argv[])
 {
 	int x, y, result;
 
-	x = argv[1][0] - '0';
-	y = argv[2][0] - '0';
+	x = atoi(argv[1]);
+	y = atoi(argv[2]);
 	result = x * y;
 	if (argc != 3)
 	{
