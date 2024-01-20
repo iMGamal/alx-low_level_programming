@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 	x = atoi(argv[1]);
 	y = atoi(argv[2]);
 	result = x * y;
-	if (argc != 4)
+	if (argc < 3)
 	{
 		printf("Error\n");
 		return (1);
