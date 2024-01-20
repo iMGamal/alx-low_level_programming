@@ -8,7 +8,9 @@
  */
 int main(int argc, char *argv[])
 {
-	int x, y, result;
+	int result;
+
+	__attribute__((unused))int x, y;
 
 	x = atoi(argv[1]);
 	y = atoi(argv[2]);
