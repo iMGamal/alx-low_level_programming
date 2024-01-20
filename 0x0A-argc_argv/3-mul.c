@@ -8,17 +8,19 @@
  */
 int main(int argc, char *argv[])
 {
-	int i = 1;
+	int x, y, result;
 
-	argv[i] = x;
-
-	int outcome = 1;
-
-	if (argc > i && argv[argc] == NULL)
+	x = argv[1][0] - '0';
+	y = argv[2][0] - '0';
+	result = x * y;
+	if (argc != 3)
 	{
-		outcome == outcome * x;
-		printf("%d\n", outcome);
-		i++;
+		printf("Error\n");
+		return (1);
+	}
+	else
+	{
+		printf("%d\n", result);
 		return (0);
 	}
 	return (0);
