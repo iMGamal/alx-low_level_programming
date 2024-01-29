@@ -5,7 +5,7 @@
  * print_numbers - Entry point
  * @separator - first variables
  * @n - number of variables passed into function
- * Return - i
+ * Return - 0
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
@@ -13,12 +13,11 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	int i; 
 
-	va_start(ap, *separator);
-	i = NULL; 
-	while (i < separator)
+	va_start(ap, n);
+	i = 0; 
+	while (i < *separator)
 	{
 		i += va_arg(ap, int);
 		i++;
 	}
-	return (i);
 }
