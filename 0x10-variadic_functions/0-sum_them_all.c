@@ -1,22 +1,24 @@
-#include<stdio.h>
-#include<stdarg.h>
-#include"variadic_functions.h"
+#include <stdio.h>
+#include <stdarg.h>
 
 /**
- *sum_them_all - sum of its all parameters
- *@const unsigned int: type quantifier
- *@n: last argument
- *
- *Return:(0).
+ * main - sum_them_all
+ * @n - number of variables
+ * Return - total
  */
 int sum_them_all(const unsigned int n, ...)
 {
-	if (n == 0);
+	va_list ap;
+
+	int total; unsigned int i;
+
+	va_start(ap, n);
+	total = 0;
+	i = 0;
+	while (i < n)
 	{
-		return (0);
+		total += va_arg(ap, int);
+		i++;
 	}
-	if (int n == sum_them_all);
-	{
-	printf("Sum of all parameters is %d\n", sum_them_all);
-	}
+	return (total);
 }
