@@ -15,7 +15,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	va_start(ap, n);
 	i = 0;
-	while (i != *separator)
+	while (i != n)
 	{
 		i += va_arg(ap, int);
 		i++;
