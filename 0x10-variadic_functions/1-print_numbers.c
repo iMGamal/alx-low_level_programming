@@ -11,13 +11,14 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list ap;
 
-	int i; 
+	int i; int numbers; 
 
 	va_start(ap, n);
-	i = 0; 
+	i = 0;
+	numbers = 0;
 	while (i < *separator)
 	{
-		i += va_arg(ap, int);
+		numbers += va_arg(ap, int);
 		i++;
 	}
 }
