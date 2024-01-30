@@ -19,10 +19,5 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 		printf("%d%s", va_arg(ap, int), separator);
 		i++;
-		printf("\n");
-	}
-	if (separator == 0)
-	{
-		return;
 	}
 }
