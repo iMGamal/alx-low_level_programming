@@ -3,8 +3,8 @@
 
 /**
  * sum_them_all - Entry point
- * @n - number of arguments in function
- * Return - int
+ * @n - first argument
+ * Return - 0
  */
 int sum_them_all(const unsigned int n, ...)
 {
