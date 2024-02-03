@@ -2,9 +2,10 @@
 #include <stdarg.h>
 
 /**
- * sum_them_all - Entry point
- * @n - first argument
- * Return - 0
+ * sum_them_all - Entry pointi
+ * Description: the 'Program' returns the sum of all its parameters
+ * @n: first argument
+ * Return: int
  */
 int sum_them_all(const unsigned int n, ...)
 {
