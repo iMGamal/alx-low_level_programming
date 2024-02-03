@@ -2,15 +2,17 @@
 #include <stdarg.h>
 
 /**
- * main - sum_them_all
- * @n - number of variables
+ * sum_them_all - Entry point
+ * @n - number of arguments in function
  * Return - int
  */
 int sum_them_all(const unsigned int n, ...)
 {
 	va_list ap;
 
-	int total; unsigned int i;
+	int total;
+
+	unsigned int i;
 
 	va_start(ap, n);
 	total = 0;
