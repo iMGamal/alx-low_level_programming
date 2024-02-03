@@ -4,7 +4,7 @@
 /**
  * main - sum_them_all
  * @n - number of variables
- * Return - i
+ * Return - int
  */
 int sum_them_all(const unsigned int n, ...)
 {
@@ -17,8 +17,15 @@ int sum_them_all(const unsigned int n, ...)
 	i = 0;
 	while (i < n)
 	{
+		if (n != 0)
+		{
 		total += va_arg(ap, int);
 		i++;
+		}
+		else
+		{
+			return (0);
+		}
 	}
-	return (i);
+	return (total);
 }
