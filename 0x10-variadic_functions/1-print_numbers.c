@@ -3,9 +3,10 @@
 
 /**
  * print_numbers - Entry point
- * @separator - first variables
- * @n - number of variables passed into function
- * Return - 0
+ * Description: the 'Program' prints numbers followed by a new line
+ * @separator: first argument
+ * @n: second argument
+ * Return: void
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
@@ -17,7 +18,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	i = 0;
 	while (i < n)
 	{
-		printf("%d%s", va_arg(ap, int), separator);
+		printf("%d%s", va_arg(ap, separator));
 		if (i == n)
 		{
 			printf("\n");
