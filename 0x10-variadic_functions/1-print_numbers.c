@@ -18,10 +18,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	i = 0;
 	while (i < n)
 	{
-		if (separator == NULL)
-		{
-			return;
-		}
 		if ((i + 1) ==  n)
 		{
 			printf("%d\n", va_arg(ap, int));
