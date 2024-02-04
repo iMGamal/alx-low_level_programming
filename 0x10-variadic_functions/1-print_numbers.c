@@ -22,9 +22,9 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		{
 			return;
 		}
-		if (i == n)
+		if (i + 1 ==  n)
 		{
-			break;
+			printf(" ");
 		}
 		else
 		{
