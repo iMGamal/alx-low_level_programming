@@ -22,7 +22,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		{
 			return;
 		}
-		else if (i == n)
+		else if (separator == n)
 		{
 			return;
 		}
