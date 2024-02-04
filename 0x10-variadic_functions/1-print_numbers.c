@@ -18,9 +18,13 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	i = 0;
 	while (i < n)
 	{
-		if (separator == NULL || *separator == '\0')
+		if (separator == NULL)
 		{
 			return;
+		}
+		if (i == n)
+		{
+			break;
 		}
 		else
 		{
