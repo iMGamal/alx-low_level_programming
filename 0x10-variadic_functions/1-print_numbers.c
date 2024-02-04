@@ -18,11 +18,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	i = 0;
 	while (i < n)
 	{
-		if (separator == NULL)
-		{
-			return;
-		}
-		else if (*separator == n)
+		if (separator == NULL || separator == '\0')
 		{
 			return;
 		}
