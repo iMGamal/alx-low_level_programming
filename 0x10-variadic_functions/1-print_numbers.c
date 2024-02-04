@@ -24,7 +24,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		}
 		if ((i + 1) ==  n)
 		{
-			printf("%d\n");
+			printf("%d\n", va_arg(ap, int));
 		}
 		else
 		{
