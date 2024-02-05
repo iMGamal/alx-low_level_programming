@@ -8,12 +8,15 @@
  */
 int factorial(int n)
 {
-	int x = 0;
+	int x = (n * factorial(n - 1));
 
-	if (n)
+	if (n < 0)
 	{
-		x = n * (factorial(n - 1));
-		x++;
+		return (-1);
+	}
+	else
+	{
+		return (n * factorial(n - 1));
 	}
 	return (x);
 }
