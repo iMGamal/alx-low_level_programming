@@ -4,14 +4,16 @@
  * factorial - Entry point
  * Description - function that returns factorial of a given number
  * @n: integer
- * Return - Always 0 (Success)
+ * Return: int
  */
 int factorial(int n)
 {
-	if (n > 0)
+	int x = 0;
+
+	if(n)
 	{
-		putchar(n + 1);
-		return (0);
+		x += factorial(n + 1);
+		x++;
 	}
-	return (n);
+	return(x);
 }
