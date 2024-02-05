@@ -4,7 +4,7 @@
  * _sqrt_recursion - Entry point
  * Description - function that returns natural square root of a given number
  * @n: integer
- * Return: _sqrt_recursion(n - 1)
+ * Return: n * _sqrt_recursion(n - 1)
  */
 int _sqrt_recursion(int n)
 {
@@ -12,5 +12,5 @@ int _sqrt_recursion(int n)
 	{
 		return (-1);
 	}
-	return (_sqrt_recursion(n - 1));
+	return (n * _sqrt_recursion(n - 1));
 }
