@@ -3,8 +3,8 @@
 /**
  * _strlen_recursion - Entry points
  * Description - function that returns length of string
- * @s : character string
- * Return : Always 0 (Success)
+ * @s: character string
+ * Return: int
  */
 int _strlen_recursion(char *s)
 {
