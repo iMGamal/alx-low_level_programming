@@ -1,4 +1,4 @@
-#include<stdio>
+#include <stdio>
 
 /**
  * is_prime_number - Entry point
