@@ -4,11 +4,11 @@
  * is_prime_number - Entry point
  * Description - function that returns 1 if the input integer is a prime number, otherwise return 0
  * @n: integer
- * Return:
+ * Return: x
  */
 int is_prime_number(int n)
 {
-	int x;
+	int x = is_prime_number(n - 1);
 
 	if (x == 1)
 	{
@@ -18,5 +18,5 @@ int is_prime_number(int n)
 	{
 		return (0);
 	}
-	return (is_prime_number(n - 1));
+	return (x);
 }
