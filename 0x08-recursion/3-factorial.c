@@ -4,7 +4,7 @@
  * factorial - Entry point
  * Description - function that returns factorial of a given number
  * @n: integer
- * Return: int
+ * Return: x
  */
 int factorial(int n)
 {
@@ -12,7 +12,7 @@ int factorial(int n)
 
 	if(n)
 	{
-		x += factorial(n + 1);
+		x = n * factorial(n - 1);
 		x++;
 	}
 	return(x);
