@@ -29,11 +29,9 @@ unsigned int binary_to_uint(const char *b)
 		{
 			int last = uint % 10;
 
-			uint = uint / 10;
 			decimal += last * base;
-			base = base * 2;
 		}
-		uint++;
+		base = base * 2;
 	}
 	return (decimal);
 }
