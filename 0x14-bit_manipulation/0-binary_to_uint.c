@@ -21,6 +21,10 @@ unsigned int binary_to_uint(const char *b)
 		{
 			return (0);
 		}
+		else if (b == NULL)
+		{
+			return (0);
+		}
 		else
 		{
 			int last = uint % 10;
@@ -29,6 +33,7 @@ unsigned int binary_to_uint(const char *b)
 			decimal += last * base;
 			base = base * 2;
 		}
+		uint++;
 	}
 	return (decimal);
 }
