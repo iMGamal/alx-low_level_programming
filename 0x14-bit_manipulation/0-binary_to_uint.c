@@ -21,15 +21,13 @@ unsigned int binary_to_uint(const char *b)
 		{
 			return (0);
 		}
-		else if (uint == '\0')
-		{
-			return (0);
-		}
 		else
 		{
 			int last = uint % 10;
 
+			uint = uint / 10;
 			decimal += last * base;
+			base = base * 2;
 		}
 	}
 	return (decimal);
