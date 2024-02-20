@@ -4,25 +4,30 @@
  * binary_to_uint - Entry point
  * Description - function that converts a binary number to an unsigned int
  * @b: character string
- * Return: NULL
+ * Return: decimal
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int x = 0;
+	int uint = *b;
 
-	unsigned int y = 1;
+	int decimal = 0;
 
-	if (*b != 0 && *b != 1)
+	int base = 1;
+
+	while (uint)
 	{
-		return (0);
+		if (uint == 0)
+		{
+			return (0);
+		}
+		else
+		{
+			int last = uint % 10;
+
+			uint = uint / 10;
+			decimal += last * base;
+			base = base * 2;
+		}
 	}
-	else if (b == y)
-	{
-		return (y);
-	}
-	else if (b == x)
-	{
-		return (x);
-	}
-	return (y);
+	return (decimal);
 }
