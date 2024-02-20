@@ -23,7 +23,7 @@ unsigned int binary_to_uint(const char *b)
 		}
 		else
 		{
-			int last = uint % 10;
+			int last = uint * 2;
 
 			decimal += last * base;
 		}
