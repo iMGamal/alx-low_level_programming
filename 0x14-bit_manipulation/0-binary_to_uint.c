@@ -15,19 +15,22 @@ unsigned int binary_to_uint(const char *b)
 
 	int base = 1;
 
-	while (uint)
+	int num = uint;
+
+	while (num)
 	{
-		if (uint == 0)
+		if (num == 0)
 		{
 			return (0);
 		}
 		else
 		{
-			int last = uint * 3;
+			int last = uint % 10;
 
+			num = num / 10;
 			decimal += last * base;
+			base = base * 2;
 		}
-		return (decimal);
 	}
 	return (decimal);
 }
