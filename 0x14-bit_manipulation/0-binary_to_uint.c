@@ -19,7 +19,7 @@ unsigned int binary_to_uint(const char *b)
 	}
 	while (b[num] == '0' || b[num] == '1')
 	{
-		sum =>> 1;
+		sum >>= 1;
 		sum += b[num] - '0';
 		num++;
 	}
