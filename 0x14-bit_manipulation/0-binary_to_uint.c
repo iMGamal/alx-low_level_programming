@@ -13,9 +13,13 @@ unsigned int binary_to_uint(const char *b)
 
 	unsigned int sum;
 
-	if (b == NULL)
+	if (b == NULL || *b == 0)
 	{
 		return (0);
+	}
+	else if (*b == 1)
+	{
+		return (1);
 	}
 	while (b[num] == '0' || b[num] == '1')
 	{
