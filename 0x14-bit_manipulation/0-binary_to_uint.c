@@ -9,28 +9,19 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int uint = *b;
+	unsigned int num = 0;
 
-	int decimal = 0;
+	unsigned int sum;
 
-	int base = 1;
-
-	int num = uint;
-
-	while (num)
+	if (b == NULL)
 	{
-		if (num == 0)
-		{
-			return (0);
-		}
-		else
-		{
-			int last = uint % 10;
-
-			num = num / 10;
-			decimal += last * base;
-			base = base * 2;
-		}
+		return (0);
 	}
-	return (decimal);
+	while (b[num] == '0' || b[num] == '1')
+	{
+		sum <<= 1;
+		sum += b[num] - '0';
+		num++;
+	}
+	return (sum);
 }
