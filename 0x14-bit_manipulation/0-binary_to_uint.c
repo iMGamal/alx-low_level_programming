@@ -21,7 +21,7 @@ unsigned int binary_to_uint(const char *b)
 		{
 			return (0);
 		}
-		else if (b == NULL)
+		else if (uint == '\0')
 		{
 			return (0);
 		}
