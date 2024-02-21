@@ -9,9 +9,9 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int x = 1;
+	int x = 0;
 
-	int y = 0;
+	int y = 1;
 
 	if (b == NULL || *b == 0)
 	{
