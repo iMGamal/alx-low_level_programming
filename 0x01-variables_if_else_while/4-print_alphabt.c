@@ -1,8 +1,8 @@
 #include <stdio.h>
 /*
- *main - Entry point
- *Description: 'program that prints alphabet except for e and q'
- *Return: Always 0 (success)
+ * main - Entry point
+ * Description: 'program that prints alphabet except for e and q'
+ * Return: Always 0 (success)
  */
 int main(void)
 {
