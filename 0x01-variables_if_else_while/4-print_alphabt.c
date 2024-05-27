@@ -1,7 +1,7 @@
 #include <stdio.h>
 /*
- * main - program that prints alphabet except for e and q.
- * @void: parameter
+ * main - Entry point of program.
+ *
  * Return: Always 0 (success).
  */
 int main(void)
