@@ -7,14 +7,12 @@ RM = rm
 all: ${OBJ}
 	${CC} ${OBJ} -o ${NAME}
 
-clean: ${NAME}
-	${RM} ${NAME}
+clean:
+	${RM} *~ ${NAME}
 
-oclean: ${OBJ}
+oclean:
 	${RM} ${OBJ}
 
-fclean: ${OBJ} ${NAME}
-	${RM} ${OBJ} ${NAME}
+fclean: clean oclean
 
-re: ${SRC}
-	${CC} ${SRC}
+re: fclean
