@@ -24,17 +24,16 @@ list_t *add_node(list_t **head, const char *str)
 	}
 	new->str = s;
 	new->len = strlen(s);
-	new->next = NULL;
 
-	if (temp == NULL)
+	if (*head == NULL)
 	{
-		temp = new;
+		head = new;
 		return (new);
 	}
 	while (temp->next != NULL)
 	{
 		temp = temp->next;
 	}
-	temp->next = new;
+	new->next = temp
 	return (new);
 }
