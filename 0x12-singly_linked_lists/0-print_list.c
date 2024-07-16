@@ -9,13 +9,10 @@
  */
 size_t print_list(const list_t *h)
 {
-	list_t *temp;
-
-	temp = h;
-	while (temp != NULL)
+	while (h != NULL)
 	{
-		printf("%s, %d\n", temp->str, temp->len);
-		temp = temp->next;
+		printf("%s, %d\n", h->str, h->len);
+		h = h->next;
 	}
 	return (0);
 }
