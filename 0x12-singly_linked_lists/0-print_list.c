@@ -5,13 +5,13 @@
 /**
  * print_list - Function that prints the content of a linked list
  * @h: Pointer to the head of a linked list
- * Return: Always 0 (Success)
+ * Return: Number of nodes printed
  */
 size_t print_list(const list_t *h)
 {
-	unsigned int n;
+	int x;
 
-	n = 0;
+	x = 0;
 	while (h != NULL)
 	{
 		if (h->str == NULL)
@@ -22,8 +22,8 @@ size_t print_list(const list_t *h)
 		{
 			printf("[%u] %s\n", h->len, h->str);
 			h = h->next;
-			n++;
+			x++;
 		}
 	}
-	return (n);
+	return (x);
 }
