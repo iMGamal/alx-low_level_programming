@@ -2,7 +2,7 @@
 #include "search_algos.h"
 
 /**
- * binary_search - Function that uses binary search algorithm to find a certain value in a sorted array
+ * binary_search - Function that uses binary search to find a certain value
  * @array: Sorted array which gonna be the search subject
  * @size: Size of the sorted array
  * @value: Integer value to be found
@@ -11,6 +11,7 @@
 int binary_search(int *array, size_t size, int value)
 {
 	int low, mid, high, i;
+
 	low = 0;
 	high = size - 1;
 
