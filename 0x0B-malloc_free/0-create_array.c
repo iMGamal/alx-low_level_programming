@@ -6,14 +6,14 @@
  * create_array - function that creates array
  * @size : Size of array
  * @c : character
- * Return : First character of array
+ * Return : Array
  */
 char *create_array(unsigned int size, char c)
 {
 	int x;
-	
+
 	char *array = malloc(sizeof(char) * size);
-	
+
 	if (size == 0 || !array)
 	{
 		return (NULL);
@@ -21,7 +21,7 @@ char *create_array(unsigned int size, char c)
 
 	for (x = 0; (unsigned int)x < size; x++)
 	{
-		array[0] = c;
+		array[x] = c;
 	}
 	return (array);
 }
