@@ -6,7 +6,7 @@
  * create_array - Function that creates array
  * @size : Size of array
  * @c : character
- * Return : array reference or NULL
+ * Return : Always array (Success)
  */
 char *create_array(unsigned int size, char c)
 {
