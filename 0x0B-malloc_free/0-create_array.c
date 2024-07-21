@@ -4,9 +4,9 @@
 
 /**
  * create_array - Function that creates array
- * @size : Size of array
- * @c : character
- * Return : Always array (Success)
+ * @size: Size of array
+ * @c: character
+ * Return: array
  */
 char *create_array(unsigned int size, char c)
 {
