@@ -4,33 +4,24 @@
 
 /**
  * create_array - function that creates array
- * @unsigned int : data type
- * @size : size of array
- * @char : data type
+ * @size : Size of array
  * @c : character
- * Return : character
+ * Return : First character of array
  */
 char *create_array(unsigned int size, char c)
 {
-	int n = size;
-
-	char *x[n];
-
-	int* ptr = (int*)malloc(n * sizeof(char));
-
-	if (size == 0)
+	int x;
+	
+	char *array = malloc(sizeof(char) * size);
+	
+	if (size == 0 || !array)
 	{
 		return (NULL);
 	}
-	else if (size > 0)
-	{
-		printf("%n", ptr);
-	}
-	if (ptr == NULL)
-	{
-		printf("Memory not allocated.\n");
-		return (NULL);
-	}
-	return (NULL);
 
+	for (x = 0; (unsigned int)x < size; x++)
+	{
+		array[0] = c;
+	}
+	return (array);
 }
