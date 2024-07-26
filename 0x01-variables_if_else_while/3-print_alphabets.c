@@ -6,13 +6,19 @@
  */
 int main(void)
 {
-	int n;
+	int n, x;
 
 	n = 97;
 	while (n < 123)
 	{
 		putchar(n);
 		n++;
+	}
+	x = 65;
+	while (x < 91)
+	{
+		putchar(x);
+                x++;
 	}
 	putchar(10);
 	return (0);
