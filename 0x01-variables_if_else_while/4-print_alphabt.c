@@ -1,20 +1,21 @@
 #include <stdio.h>
 
-/*
- * main - Prints alphabet except for e and q.
- *
- * Return: Always 0 (success).
+/**
+ * main - Function that prints letters
+ * Return: 0;
  */
 int main(void)
 {
-	int i;
+	int n;
 
-	for (i = 97; i < 123; i++)
+	n = 97;
+	while (n < 123)
 	{
-		if (i != 101 && i != 113)
+		if (n != 101 && n != 113)
 		{
-			putchar(i);
+			putchar(n);
 		}
+		n++;
 	}
 	putchar(10);
 	return (0);

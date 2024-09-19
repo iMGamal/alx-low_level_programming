@@ -1,24 +1,23 @@
 #include <stdio.h>
 
-/*
- * main: prints 2-digits combinations.
- *
- * Return: Always 0 (success).
+/**
+ * main - Function that prints letters
+ * Return: 0;
  */
 int main(void)
 {
-	int i, j;
+	int n, x;
 
-	for (i = 48; i <= 57; i++)
+	for (n = 48; n < 58; n++)
 	{
-		for (j = i + 1; j <= 57; j++)
+		for (x = n + 1; x < 58; x++)
 		{
-			putchar(i);
-			putchar(j);
-			if (i != 56 || j != 57)
+			putchar(n);
+			putchar(x);
+			if (n != 56)
 			{
 				putchar(',');
-				putchar(' ');
+				putchar(32);
 			}
 		}
 	}

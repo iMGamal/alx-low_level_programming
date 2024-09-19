@@ -1,17 +1,19 @@
 #include <stdio.h>
+
 /**
- * main - Prints numbers from 0 to 9.
- *
- * Return: Always 0 (Success)
+ * main - Function that prints letters
+ * Return: 0;
  */
 int main(void)
 {
-	int i;
+	int n;
 
-	for (i = 48; i < 58; i++)
+	n = 48;
+	while (n < 58)
 	{
-		putchar(i);
+		putchar(n);
+		n++;
 	}
-	putchar('\n');
+	putchar(10);
 	return (0);
 }

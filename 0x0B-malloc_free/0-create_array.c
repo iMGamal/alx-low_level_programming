@@ -3,34 +3,25 @@
 #include <stdlib.h>
 
 /**
- * create_array - function that creates array
- * @unsigned int : data type
- * @size : size of array
- * @char : data type
- * @c : character
- * Return : character
+ * create_array - Function that creates array
+ * @size: Size of array
+ * @c: character
+ * Return: array
  */
 char *create_array(unsigned int size, char c)
 {
-	int n = size;
+	int x;
 
-	char *x[n];
+	char *array = malloc(sizeof(char) * size);
 
-	int* ptr = (int*)malloc(n * sizeof(char));
-
-	if (size == 0)
+	if (size == 0 || !array)
 	{
 		return (NULL);
 	}
-	else if (size > 0)
-	{
-		printf("%n", ptr);
-	}
-	if (ptr == NULL)
-	{
-		printf("Memory not allocated.\n");
-		return (NULL);
-	}
-	return (NULL);
 
+	for (x = 0; (unsigned int)x < size; x++)
+	{
+		array[x] = c;
+	}
+	return (array);
 }
