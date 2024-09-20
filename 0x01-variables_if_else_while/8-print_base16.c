@@ -8,14 +8,14 @@ int main(void)
 {
 	int i, j;
 
-	i = 30;
-	j = 61;
-	while (i < 40)
+	i = 48;
+	j = 97;
+	while (i < 58)
 	{
 		putchar(i);
 		i++;
 	}
-	while (j < 67)
+	while (j < 103)
 	{
 		putchar(j);
 		j++;
